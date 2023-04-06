@@ -1,0 +1,18 @@
+type Post {
+  id: Int!
+  title: String!
+  content: String!
+}
+
+type Query {
+    posts():[Post!]!
+}
+
+input NewPostInput {
+    title:String!
+    content:String!
+}
+
+type Mutation {
+    createdPost(input:NewPostInput):Post
+}

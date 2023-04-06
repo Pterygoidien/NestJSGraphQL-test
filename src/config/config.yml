@@ -1,0 +1,12 @@
+http:
+  host: 'localhost'
+  port: 5000
+
+db:
+  postgres:
+    host: 'localhost'
+    port: 5432
+    database: 'nestjs'
+
+  sqlite:
+    database: 'sqlite.db'
